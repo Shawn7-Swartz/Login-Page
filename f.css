@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif; 
+}
+
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-image:url("./music.JPG");
+    background-size:cover;
+}
+.Pico{
+    width:450px;
+    height:500px;
+    position:relative;
+    border-radius:10px;
+    padding:30px 40px;
+    z-index:1;
+    background:rgba(92, 9, 9, 0.579);
+    box-shadow:30px;
+    border:0.2px solid #912d2d;
+}
+.Pico h1{
+    font-size:38px;
+    text-align:center;
+    color:rgb(71, 39, 3);
+    border-color: #912d2d;
+    
+}
+.Pico::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+.Pico .input{
+    position:relative;
+    width:99%;
+    height:70px;
+    margin:25px;
+}
+.input input{
+    width:80%;
+    height:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    border:2px solid burlywood;
+    border-radius:100px;
+    font:20px;
+    color:floralwhite;
+    padding:20px 45px 30px 30px
+}
+.input input::placeholder{
+    color:antiquewhite
+}
+.input i{
+    position:absolute;
+    right:90px;
+    top:30%;
+    transform:translative(-50%);
+    font-size:30px
+}
+.Pico .bttn{
+    width:100%;
+    height:46px;
+    background:rgb(222, 229, 26);
+    border:none;
+    border-radius:40px;
+    box-shadow: 0 0 10px rgb(176, 155, 32);
+    cursor:pointer;
+    font-size:16px;
+    color:rgb(1, 6, 11);
+    font-weight:600;
+}

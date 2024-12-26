@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif; 
+}
+
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-image:url("./music.JPG");
+    background-size:cover;
+}
+.Page{
+    width:450px;
+    height:500px;
+    position:relative;
+    border-radius:10px;
+    padding:30px 50px;
+    z-index:1;
+    background:rgba(92, 9, 9, 0.579);
+    box-shadow:30px;
+    border:0.2px solid #912d2d;
+}
+.Page h1{
+    font-size:38px;
+    text-align:center;
+    color:rgb(71, 39, 3);
+    border-color: #912d2d;
+    
+}
+.Page::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+.Page .input-box{
+    position:relative;
+    width:99%;
+    height:70px;
+    margin:36px;
+}
+.input-box input{
+    width:80%;
+    height:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    border:2px solid burlywood;
+    border-radius:100px;
+    font:20px;
+    color:floralwhite;
+    padding:20px 45px 30px 30px
+}
+.input-box input::placeholder{
+    color:antiquewhite
+}
+.input-box i{
+    position:absolute;
+    right:90px;
+    top:30%;
+    transform:translative(-50%);
+    font-size:30px
+}
+
+.Page .remember-forgot{
+    display:flex;
+    justify-content: space-between;
+    font-size:15px;
+    margin:-15px 0 15px;
+}
+.remember-forgot label input{
+    accent-color:rgb(222, 174, 16);
+    margin-right:3px;
+}
+.remember-forgot a{
+    color:bisque;
+    text-decoration:none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.Page .btn{
+    width:100%;
+    height:46px;
+    background:brown;
+    border:none;
+    border-radius:40px;
+    box-shadow: 0 0 5px rgb(185, 116, 86);
+    cursor:pointer;
+    font-size:16px;
+    color:aliceblue;
+    font-weight:600;
+}
+
+.Page .registor-link{
+    font-size:16px;
+    text-align:center;
+    margin-top:20px;
+}
+.registor-link p a{
+    color: aliceblue;
+    text-decoration: 10px;
+    font-weight:550;
+} 
+.registor-link p a:hover{
+    text-decoration:underline;
+
+}
+.toddle{
+    padding:10px;
+    font-size:20px;
+    width:150px;
+    text-align:center;
+    display:inline-block;
+    text-decoration:none;
+    margin:2px 100px ;
+}
+.toddle:hover{
+    opacity:0.7;
+}
